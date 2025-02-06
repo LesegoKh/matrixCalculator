@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Cal-3000</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="glitch">Matrix Cal-3000</h1>
+
+        <div class="calculator">
+            <label>Principal Amount(ZAR):<input type="number" id="principal" placeholder="Enter aount in ZAR..."></label>
+
+            <label>Annual Intrest Rate(%):<input type="number" id="rate" placeholder="Enter intrest Rate..."></label>
+
+            <label>Years:<input type="number" id="years" placeholder="Enter years here..."></label>
+            <button id="calculate">Calculate</button>
+            <p id="result">Result:0 </p>
+        </div>
+
+        <button id="hackModeBtn">ENTER HACKMODE</button>
+
+        <div id="hackMode" class="hidden">
+            <div class="terminal">
+                <pre id="hackerText"></pre>
+                <input type="text" id="terminalInput" placeholder="Enter command...">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
