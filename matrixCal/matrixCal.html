@@ -1,34 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="./style.css">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matrix Cal-3000</title>
+    <title>NeoCalc-3000</title>
 </head>
 <body>
-    <div class="container">
-        <h1 class="glitch">Matrix Cal-3000</h1>
+<canvas id="matrixCanvas"></canvas>
+    <div class="container py-5 text-center">
+        <h1 class="glitch">MatrixCalc-3000</h1>
 
-        <div class="calculator">
-            <label>Principal Amount(ZAR):<input type="number" id="principal" placeholder="Enter aount in ZAR..."></label>
+        <div class="card bg-black p-4 mt-4 mx-auto" style="max-width: 500px;">
+            <div class="mb-3">
+                <label class=" form-label">Principal Amount (ZAR)</label>
+                <input type="number" id="principal" class="form-control card bg-black">
+            </div>
 
-            <label>Annual Intrest Rate(%):<input type="number" id="rate" placeholder="Enter intrest Rate..."></label>
+            <div class="mb-3">
+                <label class="form-label">Annual Intrest Rate (%)</label>
+                <input type="number" id="rate" class="form-control card bg-black">
+            </div>
 
-            <label>Years:<input type="number" id="years" placeholder="Enter years here..."></label>
-            <button id="calculate">Calculate</button>
-            <p id="result">Result:0 </p>
+            <div class="mb-3">
+                <label class="form-label">Years</label>
+                <input type="number" id="years" class="form-control card bg-black">
+            </div>
+
+            <button id="calculate" class="btn btn-success w-100">Calculate</button>
+            <p id="result" class="mt-3">Result:(ZAR)</p>
         </div>
 
-        <button id="hackModeBtn">ENTER HACKMODE</button>
-
-        <div id="hackMode" class="hidden">
-            <div class="terminal">
-                <pre id="hackerText"></pre>
-                <input type="text" id="terminalInput" placeholder="Enter command...">
+        <button id="hackModeBtn" class="btn btn-danger mt-4">ENTER HACKERMODE</button>
+        
+        <div id="hackMode" class="hidden mt-4">
+            <div class="card bg-black text-success p-4">
+                <pre id="hackerText" class="text-start"></pre>
+                <input type="text" id="terminalInput" class="form-control bg-dark text-success" placeholder="Enter command...">
             </div>
         </div>
     </div>
+
+    <audio id="typingSound" src="https://www.fesliyanstudios.com/play-mp3/4386"></audio>
+    <audio id="glitchSound" src="https://www.fesliyanstudios.com/play-mp3/387"></audio>
+    <audio id="beepSound" src="https://www.fesliyanstudios.com/play-mp3/4563"></audio>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   
+    <script src="./script.js"></script>
 </body>
-<script src="./script.js"></script>
 </html>
