@@ -6,3 +6,7 @@ Sound effects used for AI- Warning after firewall bypass
 
 See MVP v1(to be updated):
 Link: https://lesegosite.s3.us-east-1.amazonaws.com/matrixCal/matrixCal.html
+
+Final Version(2nd branch)
+NeoCalc-300 with added visualisations onto background of Matrix Code
+Link: https://lesegosite.s3.us-east-1.amazonaws.com/neoCal/NeoCalc-3000.html
